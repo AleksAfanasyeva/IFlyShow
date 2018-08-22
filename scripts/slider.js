@@ -1,13 +1,15 @@
 
 var slideNow = 1;
-var slideCount = $('#slider-wrapper').children().length;
+var slideCount = 0;
 var slideInterval = 3000;
 var navBtnId = 0;
 var translateWidth = 0;
 
 $(document).ready(function() {
 
-    console.log(slideNow);
+    slideCount = $('#slider-wrapper').children().length;
+
+    console.log(slideCount);
     var switchInterval = setInterval(nextSlide, slideInterval);
 
     $('#viewport').hover(function() {
@@ -18,18 +20,20 @@ $(document).ready(function() {
 
     $('#next-btn').click(function() {
         nextSlide();
+        console.log("next")
     });
 
     $('#prev-btn').click(function() {
         prevSlide();
+        console.log("prev")
     });
 
     $('.slide-nav-btn').click(function() {
         navBtnId = $(this).index();
 
-        if (navBtnId + 1 != slideNow) {
+        if (navBtnId + 1 !== slideNow) {
             translateWidth = -$('#viewport').width() * (navBtnId);
-            $('#slidewrapper').css({
+            $('#slider-wrapper').css({
                 'transform': 'translate(' + translateWidth + 'px, 0)',
                 '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
                 '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
@@ -41,12 +45,12 @@ $(document).ready(function() {
 
 
 function nextSlide() {
-    if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
-        $('#slidewrapper').css('transform', 'translate(0, 0)');
+    if (slideNow === slideCount || slideNow <= 0 || slideNow > slideCount) {
+        $('#slider-wrapper').css('transform', 'translate(0, 0)');
         slideNow = 1;
     } else {
         translateWidth = -$('#viewport').width() * (slideNow);
-        $('#slidewrapper').css({
+        $('#slider-wrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
@@ -56,9 +60,9 @@ function nextSlide() {
 }
 
 function prevSlide() {
-    if (slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
+    if (slideNow === 1 || slideNow <= 0 || slideNow > slideCount) {
         translateWidth = -$('#viewport').width() * (slideCount - 1);
-        $('#slidewrapper').css({
+        $('#slider-wrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
@@ -66,7 +70,7 @@ function prevSlide() {
         slideNow = slideCount;
     } else {
         translateWidth = -$('#viewport').width() * (slideNow - 2);
-        $('#slidewrapper').css({
+        $('#slider-wrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
