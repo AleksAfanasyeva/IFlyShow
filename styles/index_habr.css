@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-#slidewrapper {
+#slider-wrapper {
     position: relative;
     width: calc(100% * 4);
     -webkit-transition: 1s;
@@ -32,7 +32,7 @@ body {
     transition-timing-function: cubic-bezier(.67,.01,.23,1);
 }
 
-#slidewrapper, #slidewrapper ul, #slidewrapper li {
+#slider-wrapper, #slider-wrapper ul, #slider-wrapper li {
     margin: 0;
     padding: 0;
 }

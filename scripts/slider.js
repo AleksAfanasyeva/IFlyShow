@@ -1,12 +1,13 @@
-Console.log("works");
+
 var slideNow = 1;
-Console.log(slideNow);
-var slideCount = $('#slidewrapper').children().length;
+var slideCount = $('#slider-wrapper').children().length;
 var slideInterval = 3000;
 var navBtnId = 0;
 var translateWidth = 0;
 
 $(document).ready(function() {
+
+    console.log(slideNow);
     var switchInterval = setInterval(nextSlide, slideInterval);
 
     $('#viewport').hover(function() {
