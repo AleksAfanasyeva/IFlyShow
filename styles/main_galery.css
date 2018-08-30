@@ -1,13 +1,14 @@
 .html{
-    margin: 0;
+    /*margin: 0;*/
 }
 .body{
-    margin: 0;
+    /*margin: 0;*/
 }
 .galery{
-
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    height: 760px;
+    height: 360px;
     margin: 0px;
     background-color: #0A0A2A;
     overflow: scroll;
@@ -19,23 +20,43 @@ ul.photogalery{
     list-style-position: inherit;
     margin: 0px;
     background-color: #1E90FF;
+
 }
-.photogalery > li{
+li{
+    margin: 20px;
+    background-color: #bc2a8d;
     display: inline-block;
     flex: 1;
     list-style-type: none;
     /*background-color: #bc2a8d;*/
     height: 300px;
-    width: 400px;
-    /*width: calc(30%-10px);*/
+    /*width: 400px;*/
+    overflow: hidden;
+    width: calc(30% - 10px);
 }
 li.photo{
 
-    overflow: hidden;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+
+
+}
+.photogalery > li:hover {
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+
+}
+.photogalery > li:active {
+
 
 }
 img.photo{
-    margin: 30px;
+    margin: 0px;
     height: 300px;
-    width: 400px;
+    /*width: 400px;*/
 }

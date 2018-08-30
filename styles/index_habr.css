@@ -1,28 +1,24 @@
-body {
-    margin: 0;
-    padding: 0;
-    z-index: -2;
-}
 
 #block-for-slider {
-    width: 100%;
-    margin: 0 auto;
+    margin: 6% 8%;
+    min-width: 900px;
+    position: relative;
 
 }
 
 #viewport {
     width: 100%;
-    position: relative;
+    /*position: relative;*/
     overflow: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    text-align: center;
+
 }
 
-#slider-wrapper {
+#slidewrapper {
     position: relative;
     width: calc(100% * 4);
     -webkit-transition: 1s;
@@ -53,7 +49,8 @@ body {
     position: absolute;
     width: 50px;
     height: 50px;
-
+    border-radius: 50%;
+    background-color: grey;
     top: calc(50% - 25px);
 
 }
@@ -64,19 +61,23 @@ body {
 }
 
 #prev-btn {
-    left: 20px;
+    left: -7%;
     background-image: url("../images/prev2.png");
+    /*background-position-x: -5px;*/
+    background-position-y:5px;
     background-size: 40px;
     background-repeat: no-repeat;
-    left: 0px;
+
 }
 
 #next-btn {
-    right: 20px;
+    right: -7%;
     background-image: url("../images/next2.png");
+    background-position-y: 5px;
+    background-position-x: 6px;
     background-size: 40px;
     background-repeat: no-repeat;
-    right: 0;
+    /*right: 0;*/
 }
 
 #nav-btns {
@@ -101,4 +102,12 @@ body {
 
 .slide-nav-btn:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+    #next-btn{right: 10px;}
+    #prev-btn{left: 10px;}
+    #block-for-slider{margin: 50px 80px;}
+
+
 }

@@ -2,6 +2,7 @@ html {
 	margin: 0;
 	padding: 0;
 	border:0;
+	/*background: rgba(189, 239, 255,0.8);*/
 }
 
 body {
@@ -42,11 +43,11 @@ img.logo {
 	top:0;
 	bottom: 0;
 	right: 0;
-	background: rgba(255,255,255,0.7);
+	background: rgba(189, 239, 255,0.8);
 	background-size: cover;
 	filter: blur(15px);
 	overflow: hidden;
-	background: linear-gradient(0dg);
+	/*background: linear-gradient(0dg);*/
 	/*border: 3px solid white;*/
 }
 ul.menu {
@@ -65,7 +66,7 @@ ul.menu {
 .menu > li:hover {
 	cursor: pointer;
 	/*background: #fcfcfc;*/
-	color:#1E90FF;
+	color:#00A7EE;
 	transition: all 0.5s ease;
 }
 
@@ -88,11 +89,9 @@ li.nav-btn {
 }
 
 .ratio {
-
-
 }
 .ratio-4-3 {
-	padding-top: 36%; /* 100% ширины делим на 4 и умножаем на 3 */
+	padding-top: 50%; /* 100% ширины делим на 4 и умножаем на 3 */
 	z-index: -2;
 
 }
@@ -114,8 +113,8 @@ li.nav-btn {
 	width:100%;
 	min-width: 700px;
 
-    background: #bc2a8d;
-	background-image: url(../images/Bez_imeni-5.jpg);
+
+	background-image: url(../images/Bez_imeni-7.jpg);
 	min-width: 100%;
 	background-size: 102%;
 	background-repeat: no-repeat;
@@ -136,8 +135,8 @@ li.nav-btn {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	top: 30%;
-	width: 50%;
+	top: 33%;
+	width: 55%;
 	text-align: center;
 	font-size: 1.5em;
 	color:white;
@@ -155,7 +154,7 @@ li.nav-btn {
 	min-width: 50%;
 	margin-left: auto;
     margin-right: auto;
-	font-size: 2vw;
+	font-size: 2.4vw;
 }
 @media only screen and (max-width: 950px) {
 	.description{font-size: 0.8em; }
@@ -165,96 +164,7 @@ li.nav-btn {
 	width: 100%;
     position: relative;
     z-index: -2;
-
-
-	/*background-color:blue;*/
 }
-
-/* #up  button {
-	display: inline-block;
-	
-	background-color: LightSkyBlue;
-	color: black;
-	font-size: 1.2rem;
-	border-radius: 100px;
-	width: 200px;
-	height: 60px;
-	text-align: center;
-} */
-
-/*.block {
-	display: inline-block;
-	margin: 10px;
-	
-	padding: 10px;
-	background: #fff;
-	width: 41%;
-	height: 300px;
-	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7), inset 0 1px rgba(255, 255, 255, 0.3);
-}*/
-
-
-
-/*.Button__textWrapper, .Button__text, {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-
-}
-
-.Button {
-	display: inline-block;
-	position: relative;
-	background-color: LightSkyBlue;
-	color: black;
-	font-size: 1.2rem;
-	border-radius: 1000px;
-	width: 200px;
-	height: 60px;
-	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7), inset 0 1px rgba(255, 255, 255, 0.3);
-	text-align: center;
-	-webkit-transition: background-color 500ms, -webkit-transform 100ms;
-	transition: background-color 500ms, -webkit-transform 100ms;
-	transition: background-color 500ms, transform 100ms;
-	transition: background-color 500ms, transform 100ms, -webkit-transform 100ms;
-}
-
-.Button__text {
-  line-height: 60px;
-  top: 0;
-}
-
-.Button::before {
-  content: attr(data-tooltip);
-  width: 140px;
-  height: 60px;
-  background-color: #EEB868;
-
-  font-size: 1rem;
-  border-radius: .25em;
-  line-height: 60px;
-  bottom: 90px;
-  left: calc(50% - 70px);
-}
-
-.Button:hover {
-  background-color: #01BAEF;
-   color: #fff; 
-}
-*/
-/* при наведении текст уплывает наверх */
-
-/* .Button:hover .Button__text {
-  top: -100%;
-} */
-
-
-/*.Button:active {
-  -webkit-transform: translate(2px, 2px);
-          transform: translate(2px, 2px);
-}*/
-
 
 
 .contacts{
@@ -262,9 +172,34 @@ li.nav-btn {
 	width: 100%;
 	height: 300px;
 	color:white;
+	z-index: -2;
+	overflow: hidden;
+}
+.line{
+	z-index: -2;
+	position: center;
+}
+.symbol{z-index: -3}
+.cont{z-index: -3}
+.p2{
+	width: 10px;
+	float: left;
+	position: center;
+}
+.contacts p{
+	float: left;
+	width: 49.5%;
+	text-align: center;
+	margin-top: 10px;
 }
 
-
+img.contim{
+	width: 30px;
+	height: 30px;
+	border-radius: 15%;
+	background-color: white;
+	position: center;
+}
 .footer{
 	position: relative;
 	/*background:#87CEFA;*/
@@ -283,7 +218,7 @@ li.nav-btn {
 .wrapper ul {
   list-style:none;
   display: flex;
-  flex-flow: row, nowrap;
+  flex-flow: row;
   text-align: center;
   justify-content: center;
 }
@@ -353,20 +288,7 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
-/* media queries */
 
-/*@media screen and (max-width: 640px){
-  .wrapper {
-      width: 350px;
-  }
-  .wrapper ul li{
-      margin-top: 10px;
-  }
-  .wrapper ul li.google{
-      margin-left: 60px;
-  }
-}
-*/
 
 @media screen and (max-width: 340px){
   .wrapper {
