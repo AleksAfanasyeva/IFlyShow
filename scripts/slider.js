@@ -1,10 +1,13 @@
 var slideNow = 1;
-var slideCount = $('#slidewrapper').children().length;
+var slideCount = -1;
 var slideInterval = 3000;
 var translateWidth = 0;
 
 $(document).ready(function() {
     var switchInterval = setInterval(nextSlide, slideInterval);
+    slideCount = $('#slidewrapper').children().length;
+
+    console.log("slideCount: " + slideCount);
 
     $('#viewport').hover(function() {
         clearInterval(switchInterval);
@@ -13,10 +16,12 @@ $(document).ready(function() {
     });
 
     $('#next-btn').click(function() {
+        console.log("next");
         nextSlide();
     });
 
     $('#prev-btn').click(function() {
+        console.log("prev");
         prevSlide();
     });
 
