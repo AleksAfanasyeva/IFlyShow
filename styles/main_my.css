@@ -213,6 +213,7 @@ li.nav-btn {
 	font-size: 0.9em;
 }
 .imgcount{
+    left: 8px;
     margin-left: 45%;
 	/*position: absolute;*/
     /*left: 50%;*/

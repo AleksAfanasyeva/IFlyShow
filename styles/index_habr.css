@@ -10,6 +10,7 @@
 }
 
 #viewport {
+    height: auto;
     width: 100%;
     /*position: relative;*/
     overflow: hidden;
@@ -19,12 +20,13 @@
     -o-user-select: none;
     user-select: none;
     border-radius: 20px;
-    height: auto;
-    border: 5px solid rgb(10,10,42);
+    border: 4px solid rgb(10,10,42);
 
 }
 
 #slidewrapper {
+    margin: 0;
+    background-color: #0A0A2A;
     -webkit-padding-start: 0;
     -moz-padding-start: 0;
     padding-start: 0;
@@ -48,10 +50,14 @@
     list-style: none;
     display: inline;
     float: left;
+    background-color: #1E90FF;
 }
 
 .slide-img {
     width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -60,7 +66,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: grey;
+    border: 3px solid rgb(10,10,42);
+    /*background-color: grey;*/
     top: calc(50% - 25px);
 
 }
