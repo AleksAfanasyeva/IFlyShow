@@ -19,6 +19,9 @@
 }
 
 #slidewrapper {
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0;
+    padding-start: 0;
     position: relative;
     width: calc(100% * 4);
     -webkit-transition: 1s;
