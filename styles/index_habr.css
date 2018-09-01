@@ -1,8 +1,11 @@
 
 #block-for-slider {
-    margin: 6% 8%;
+    margin: 3% 1%;
     min-width: 900px;
     position: relative;
+    width: 74%;
+
+    margin-left: 13%;
 
 }
 
@@ -15,6 +18,9 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    border-radius: 20px;
+    height: auto;
+    border: 5px solid rgb(10,10,42);
 
 }
 
@@ -46,6 +52,7 @@
 
 .slide-img {
     width: 100%;
+
 }
 
 #prev-btn, #next-btn {
