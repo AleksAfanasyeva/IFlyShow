@@ -3,7 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Шоу IFLY</title>
-	<link rel="stylesheet" type="text/css" href="styles/index_habr.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- подключаем последнюю версию jQuery -->
+    <script type="text/javascript" src="scripts/carousel.js"></script>
+    <!--<link href="styles/reset.css" rel="stylesheet">-->
+    <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles-carousel.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/index_habr.css">
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/menu.js"></script>
 	<script type="text/javascript" src="scripts/slider.js"></script>
@@ -50,6 +57,80 @@
 			</div>
 		</div>
 
+    <div class="gal">
+        <div class="carousel shadow">
+            <div class="carousel-button-left"><b href="#"></b></div>
+            <div class="carousel-button-right"><b href="#"></b></div>
+            <div class="carousel-wrapper">
+                <div class="carousel-items">
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/1.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/11.jpg" alt="" /></a>
+                    </div>
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/2.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/12.jpg" alt="" /></a>
+                    </div>
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/3.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/13.jpg" alt="" /></a>
+                    </div>
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/4.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/14.jpg" alt="" /></a>
+                    </div>
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/5.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/15.jpg" alt="" /></a>
+                    </div>
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/6.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/16.jpg" alt="" /></a>
+                    </div>
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/7.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/17.jpg" alt="" /></a>
+                    </div>
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/8.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/18.jpg" alt="" /></a>
+                    </div>
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/9.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/9.jpg" alt="" /></a>
+                    </div>
+                    <div class="carousel-block">
+                        <a href="images/galery/originals/10.jpg" data-lightbox="roadtrip">
+                            <img src="images/galery/10.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="profil">
+		<!--<h1>Направления</h1>-->
+		<div class="block-prof-left">
+			<div class="prof-left">
+					<img class="profim-left" src="images/profil/silks.png">
+				<div class="left">Воздушные полотна представляют собой два длинных полотна тянущейся или слаботянущейся ткани. На них гимнасты могут, как элегантно
+					кружиться в шпагате, так и выполнять завораживающие обрывы.</div>
+			</div>
+		</div>
+		<div class="block-line-prof">
+			<div class="lineprof"><table border="2px" width="1px" height="520px"  style="border-color: #0A0A2A;"></table>
+			</div>
+		</div>
+		<div class="block-prof-right">
+			<div class="prof-right">
+				<div class="imgprof">
+					<img class="profim-right" src="images/profil/hoop.png">
+				</div>
+				<div class="right">Танец на воздушном кольце - это грациозность, гибкость, выносливость, музыкальность, воздушность, это-сила и легкость.
+					Гимнасты на кольце сособны повиснуть лишь на одной ноге или даже на шее.</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="contacts">
 		<h1 >Наши контакты</h1>
@@ -66,7 +147,7 @@
 		</div>
 		<div class="block-cont-right">
 			<div class="cont-right">
-				<div class="imgcount"><img class="contim" src="images/phone-auricular-outline_icon-icons.com_73189.png"></div>
+				<div class="imgcount"><img class="contim" src="images/adress2.png"></div>
 				<p>г. Томск, Красноармейская 101 а, офис 404</p>
 			</div>
 		</div>
@@ -83,6 +164,6 @@
 			</ul>
 		</h>
 	</footer>
-
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 .gal{
    margin:0;
     position: relative;
+    z-index: 0;
 }
 .carousel  {
     margin-top: 10px;
@@ -22,14 +23,15 @@
    
 }*/
 .carousel-items {
-    margin-top: 20px;
+    margin-top: 25px;
     padding-left: 4.3%;
     padding-right: 3%;
    /*margin:10px;*/
    display:grid;
    grid-template-columns: repeat(auto-fit, 300px);
    grid-template-rows: repeat(1, 300px);
-    grid-gap: 2%;
+    grid-column-gap: 2%;
+    grid-row-gap: 7%;
    /*margin 40px;*/
    height: inherit;
    width: inherit; /* ������������� ������� ������ ��� ������ ��������� */
@@ -53,8 +55,8 @@
    width: 100%;
     height: 100%;
     object-fit: cover;
-    /*border-radius: 50px;*/
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(189, 239, 255, 0.6);
 
 }
 .carousel-block img:hover{
@@ -69,21 +71,23 @@
 
 /*********** BUTTONS ***********/
 .carousel-button-left b, .carousel-button-right b{
-   width: 40px; 
-   height: 40px; 
+    color:rgb(189, 239, 255);
+   width: 41px;
+   height: 41px;
    position: relative;
    top: 150px; 
    cursor: pointer; 
    text-decoration:none;
+    border: 2px solid rgb(189, 239, 255);
+    border-radius: 50%;
 }
 .carousel-button-left b{
     margin-left: 20px;
-   border-radius: 50%;
    float: left; 
    left: 5px;
    background: url(../images/prev2.png) no-repeat; 
    background-size: 35px;
-   background-position: -2px 2px; 
+   background-position: -2px 3px;
    background-color: rgba(255, 255, 255, 0.6);
    opacity: 0.6;
 
@@ -101,10 +105,10 @@
    background: url(../images/next2.png) no-repeat; 
    background-size: 25px 36px;
    background-size: 35px;
-   background-position: 4px 2px; 
+   background-position: 6px 3px;
    background-color: rgba(255, 255, 255, 0.6);
    right: 5px;
-   border-radius: 50%;
+
    opacity: 0.6;
 
 }

@@ -6,7 +6,7 @@ html {
 }
 
 body {
-	min-width: 900px;
+	min-width: 920px;
 	color:#0A0A2A;
 	font-weight: 800;
 	margin:0;
@@ -43,7 +43,7 @@ img.logo {
 	top:0;
 	bottom: 0;
 	right: 0;
-	background: rgba(189, 239, 255,0.8);
+	background: rgba(189, 239, 255,0.95);
 	background-size: cover;
 	filter: blur(15px);
 	overflow: hidden;
@@ -173,7 +173,7 @@ li.nav-btn {
 	width: 100%;
 	height: 300px;
 	color:white;
-	z-index: -2;
+	/*z-index: -2;*/
 	overflow: hidden;
 	/*width: 100%;*/
 }
@@ -213,20 +213,140 @@ li.nav-btn {
 	font-size: 0.9em;
 }
 .imgcount{
-    left: 8px;
     margin-left: 45%;
 	/*position: absolute;*/
     /*left: 50%;*/
-	width: 10%;
-	height: 10%;
+	width: 35px;
+	height: 35px;
 	border-radius: 15%;
 	background-color: white;
 	position: center;
 }
 img.contim{
+    margin-top: 1px;
+    margin-left: 2px;
 	width: 30px;
 	height: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+.profil{
+	min-width: 900px;
+	color:#0A0A2A;
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+.block-prof-left,.block-prof-right {
+	/*top:40%;*/
+	width: 45%;
+	height: 100%;
+	position: absolute;
+}
+.block-prof-left{
+	left: 0;
+}
+.block-prof-right{
+	right: 0;
+}
+.block-line-prof{
+	position: absolute;
+	left: 50%;
+	width: 4%;
+}
+.prof-left,.prof-right{
+	/*width: 80%;*/
+	height: 100%;
+	margin-top: 0;
+}
+.prof-right {
+	margin-top: 0;
+	/*margin-right: 10%;*/
+}
+.prof-left{
+	/*margin-top: 0;*/
+	/*padding: 0;*/
+	/*margin-left: 10%;*/
+}
+.lineprof{
+	width: 10%;
+	margin-top: 40px;
+}
+.left{
+	color: #0A0A2A;
+	top: 13%;
+	position: absolute;
+	left: 57%;
+	text-align: right;
+	font-size: 1.73em;
+	width: 45%;
+}
+.right{
+	color: #0A0A2A;
+	top: 13%;
+	position: absolute;
+	right: 57%;
+	text-align: left;
+	font-size: 1.73em;
+	width: 45%;
+}
+
+img.profim-left{
+	/*margin-top: 1px;*/
+	/*margin-left: 2px;*/
+	height: 100%;
+	position: absolute;
+	left: -17.5%;
+	top: 0;
+
+}
+
+img.profim-right{
+	/*margin-top: 1px;*/
+	/*margin-left: 2px;*/
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+}
+@media only screen and (max-width: 1100px) {
+	img.profim-left{left: -25%}
+	.left{font-size: 1.5em;
+	top:12%;
+	}
+	.right{font-size: 1.5em;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer{
 	position: relative;
 	/*background:#87CEFA;*/

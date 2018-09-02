@@ -1,6 +1,7 @@
 
 #block-for-slider {
-    margin: 3% 1%;
+    z-index: -2;
+    margin: 5% 1%;
     min-width: 900px;
     position: relative;
     width: 74%;
