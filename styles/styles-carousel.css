@@ -8,7 +8,7 @@
  /*  max-width: 1080px;  ������ ����� ����� 
    margin: 50px auto;*/
    width:100%;
-   height:340px;
+   height:400px;
    overflow: hidden;
    background-color: #0A0A2A;
 
@@ -28,8 +28,8 @@
     padding-right: 3%;
    /*margin:10px;*/
    display:grid;
-   grid-template-columns: repeat(auto-fit, 300px);
-   grid-template-rows: repeat(1, 300px);
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-rows: repeat(1, minmax(250px, 1fr));
     grid-column-gap: 2%;
     grid-row-gap: 7%;
    /*margin 40px;*/

@@ -26,6 +26,9 @@ img.logo {
 	margin-top: 10px;
 }
 .navbar{
+	border: 3px solid #0A0A2A;
+	border-left: 0;
+	border-right: 0;
 	position: fixed;
 	top:0;
 	width: 100%;
@@ -43,7 +46,7 @@ img.logo {
 	top:0;
 	bottom: 0;
 	right: 0;
-	background: rgba(189, 239, 255,0.95);
+	background: rgba(189, 239, 255,0.8);
 	background-size: cover;
 	filter: blur(15px);
 	overflow: hidden;
@@ -111,7 +114,6 @@ li.nav-btn {
 	left: 0;
 	z-index: -2;
 	width:100%;
-	min-width: 700px;
 	background-image: url(../images/Bez_imeni-7.jpg);
 	min-width: 100%;
 	background-size: 102%;
@@ -137,7 +139,7 @@ li.nav-btn {
 	width: 55%;
 	text-align: center;
 	font-size: 1.5em;
-	color:white;
+	color:rgb(189, 239, 255);
 	margin:50px;
 
 }
@@ -349,16 +351,18 @@ img.profim-right{
 
 .footer{
 	position: relative;
+	/*width: 100%;*/
 	/*background:#87CEFA;*/
 	/*text-align: center;
 */
 }
 .wrapper {
 	text-align: center;
-
+	width: 150px;
 	margin-top: 40px;
 	transform: translate(-50%, -50%);
-	width: 150px;
+	/*width: 100%;*/
+
 }
 
 /* Style the Un-order list by setting its list-style to none */
@@ -368,11 +372,26 @@ img.profim-right{
   flex-flow: row;
   text-align: center;
   justify-content: center;
+	-webkit-padding-start:0px;
+
 }
 /*
  Style the list items inside the UL list, by setting its width, height and line-height 
   and float them to left and set its border and border-radius.
  */
+/*.facebook{*/
+	 /*position: absolute;*/
+	 /*left: 42%;*/
+ /*}*/
+/*.vk{*/
+	/*position: absolute;*/
+	/*left: 47%;*/
+/*}*/
+/*.instagram{*/
+	/*position: absolute;*/
+	/*right: 42%;*/
+
+/*}*/
 .wrapper ul li {
   width: 48px;
   height: 48px;
@@ -398,40 +417,40 @@ to align it properly */
   to icons for glowing effect and use transition property for smooth transition effect. */
 /*facebook*/
 .wrapper ul li:hover.facebook {
-  border: 3.5px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
+  border: 3.5px solid rgb(189, 239, 255);
+  box-shadow: 0 0 15px rgb(189, 239, 255);
   transition: all 0.5s ease;
 }
 
 .wrapper ul li:hover .fa-facebook {
-  color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
+  color: rgb(189, 239, 255);
+  text-shadow: 0 0 15px rgb(189, 239, 255);
   transition: all 0.5s ease;
 }
 
 /*vk*/
 .wrapper ul li:hover.vk {
-  border: 3.5px solid #4169E1;
-  box-shadow: 0 0 15px #4169E1;
+  border: 3.5px solid rgb(189, 239, 255);
+  box-shadow: 0 0 15px rgb(189, 239, 255);
   transition: all 0.5s ease;
 }
 
 .wrapper ul li:hover .fa-vk {
-  color:#4169E1;
-  text-shadow: 0 0 15px #4169E1;
+  color:rgb(189, 239, 255);
+  text-shadow: 0 0 15px rgb(189, 239, 255);
   transition: all 0.5s ease;
 }
 
 /* instagram */
 .wrapper ul li:hover.instagram {
-  border: 3.5px solid #bc2a8d;
-  box-shadow: 0 0 15px #bc2a8d;
+  border: 3.5px solid  rgb(189, 239, 255);
+  box-shadow: 0 0 15px rgb(189, 239, 255);
   transition: all 0.5s ease;
 }
 
 .wrapper ul li:hover .fa-instagram {
-  color: #bc2a8d;
-  text-shadow: 0 0 15px #bc2a8d;
+  color: rgb(189, 239, 255);
+  text-shadow: 0 0 15px rgb(189, 239, 255);
   transition: all 0.5s ease;
 }
 
